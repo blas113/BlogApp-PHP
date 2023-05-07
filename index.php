@@ -12,14 +12,14 @@
 
 	<div class="content">
 		<?php
-			// Include the database connection
+		
 			include 'config.php';
 
-			// Get all blog posts from the database
+		
 			$sql = "SELECT * FROM post";
 			$result = mysqli_query($conn, $sql);
 
-			// Loop through all blog posts and display them
+		
 			while ($row = mysqli_fetch_assoc($result)) {
 				echo '<div class="post">';
 				echo '<h2>' . $row['title'] . '</h2>';
